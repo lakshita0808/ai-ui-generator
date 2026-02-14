@@ -1,0 +1,16 @@
+{
+  "name": "ai-ui-generator",
+  "private": true,
+  "scripts": {
+    "server": "node server/server.js",
+    "web": "cd web && npm run dev",
+    "dev": "concurrently \"npm run server\" \"npm run web\"",
+    "build": "cd web && npm install && npm run build",
+    "start": "node server/server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "concurrently": "^8.2.0"
+  }
+}
